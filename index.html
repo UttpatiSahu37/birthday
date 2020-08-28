@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="heart.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/376fd792c6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <script>
+        window.addEventListener("load", function(){
+            var load_screen = document.getElementById("load_screen");
+            document.body.removeChild(load_screen);
+        });
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 100) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    </script>
+    <body style="background-color: #f1c40f">
+        <div id="load_screen">
+            <div class="wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="shadow"></span>
+                <span class="text">LOVE</span>
+              </div>
+              <div class="container-fluid">
+                <p style="text-align: center;font-size: 40px;color: #c0392b;font-family: 'Lato';" class="animate-bounce">Hey Sthit Happy Birthday</p>
+            </div>    
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="love">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                                   result="love" />
+                    <feBlend in="SourceGraphic" in2="love" />
+                  </filter>
+                </defs>
+              </svg>
+        </div>
+        
+        <div class="container my-5 py-5 z-depth-1" id="icon">
+
+ 
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+        
+              <!--Grid row-->
+              <div class="row slideanim" style="margin-bottom: 80px;">
+        
+                <!--Grid column-->
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+        
+                  <img src="baby sthit.jpg" class="img-fluid" alt="">
+        
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+        
+                  <h3 class="font-weight-bold">Jab Tum Chote Bache The</h3>
+        
+                  <p class="font-weight-bold">sakal pe mat jao e manisa ra</p>
+        
+                  <p class="text-muted">Sebe cute thila ebe aau nhi...Sebethu misithanta mo saha,bole sudhuriki thanta...ete late re misila laja Nhi
+                    hau ebe sudhuri jao jatra tk hazam hela pari kara 
+                  </p>
+        
+                  </div>
+                <!--Grid column-->
+        
+              </div>
+              <!--Grid row-->
+              <div class="row slideanim" style="margin-bottom: 80px;">
+        
+                <!--Grid column-->
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+        
+                  <img src="young sthit.jpg" class="img-fluid" alt="">
+        
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+        
+                  <h3 class="font-weight-bold">Setiki Thau Besi Jhia Patijibe</h3>
+        
+                  <p class="font-weight-bold">pht utheiba aau jhia line mariba e manisa ra kartabya</p>
+        
+                  <p class="text-muted">Tk lajya saram rakhutha...kete bhagya re ete susila kanya te milichi ta katha sunibeni,taku bulei nebeni khali se somnath 
+                    prayag saha chaa pibaku hin dina raati jautha hela...sikha se gf thu tk kete pyar karuchi tamaku...kebe gaali karuni raguni kichi nhi...magnifying 
+                    glass pakeiki khojile b emiti jhia milibani janicha
+                  </p>
+        
+                 </div>
+                <!--Grid column-->
+        
+              </div>
+              <!--Grid row-->
+              <div class="row slideanim" style="margin-bottom: 80px;">
+        
+                <!--Grid column-->
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+        
+                  <img src="budha sthit.jpg" class="img-fluid" alt="">
+        
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+        
+                  <h3 class="font-weight-bold">future re emiti dekha jiba</h3>
+        
+                  <p class="font-weight-bold">Aaji aau tk budha heigala...So Sad</p>
+        
+                  <p class="text-muted">Dekha mu tamaku tama bhabishyata dekhei deuchi...Jo ete chaa piuna raati adha re b jo piucha...sabu chuti white heijiba janicha
+                    aau kiye jhia line maribeni tamaku
+                  </p>
+                </div>
+                <!--Grid column-->
+        
+              </div>
+              <button class="btn btn-info btn-block my-4" type="submit" id="welcom">Welcome Mr. Sakshyam</button>
+            </section>
+            <!--Section: Content-->
+          </div>
+          <div id="change" style="display: none; padding: 40px 20px;  background-color: cornflowerblue;" class="align-items-center justify-content-center">
+            <img src="sthita bday.png" class="img-fluid" alt=""><br>
+            <h3 class="font-weight-bold" style="text-align: center; padding: 0px 10px; color: cornsilk;"><b>HAPPY</b> <b id="menu" style="color: cornsilk;">BIRTHDAY</b></h3>
+            <img src="bday cake.png" class="img-fluid" alt=""><br>
+            <button class="btn btn-dark btn-block my-4" type="submit" id="nxt">Ab Chalo bhi nxt ko <br>kitna khud ko dekhoge</button>
+          </div>
+          <div class="container align-items-center justify-content-center" id="quiz" style="padding-bottom: 20px; display: none; margin-top: 30px;">
+            <h3>THODA QUIZ HOJAYE</h3>
+            <div class="card" style="padding: 30px 10px;">
+            <h4>Mora Fav. Kouta kahila ??</h4>
+            <!-- Button to Open the Modal -->
+            <span>
+              <button type="button" class="btn btn-primary btn-block my-4" data-toggle="modal" data-target="#myModal"><i style="color: rgb(51, 22, 2); font-size: 30px;" class="fas fa-cookie"></i>     DARK CHOCKLATE</button>
+              <button type="button" class="btn btn-primary btn-block my-4" data-toggle="modal" data-target="#myModal1"><i style="color: rgb(243, 61, 122); font-size: 30px;" class="fas fa-ice-cream"></i>    CHOCKLATE ICE-CREAM</button>
+            </span>
+          
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #ff3d00; color: white;">
+                    <h4 class="modal-title">NAAAAIII</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Murkha eita mo fav nhi etiki b janina,icha bt tk kam icha
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="myModal1">
+              <div class="modal-dialog modal-sm ">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #64dd17; color: white;">
+                    <h4 class="modal-title">Haan eita thik...Good</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Burla gale misiki khaiba hela...tame chklt aau mu chklt ice-cream
+                  </div>
+                </div>
+              </div>
+            </div>
+              <h4>Mote Tama Saha Kou Jaga Jibaku Icha Nhi Kahila ??</h4>
+            <!-- Button to Open the Modal -->
+            <span>
+              <button type="button" class="btn btn-info btn-block my-4" data-toggle="modal" data-target="#myModal2"><i style="font-size: 30px; color: blue;" class="fas fa-swimming-pool"></i>     PC BRIDGE</button>
+              <button type="button" class="btn btn-info btn-block my-4" data-toggle="modal" data-target="#myModal3"><i style="font-size: 30px; color: blue;" class="fas fa-ship"></i>     SYPHON</button>
+            </span>
+          
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal3">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #ff3d00; color: white;">
+                    <h4 class="modal-title">NAAAAIII</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Eita tamaku jibaku icha nhi,bcz aauthare tama bhai dekhibe aau kahibe"Pupun aaji dhara padila"..aau thodi excuse deba "swarupa hajigale boli"                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="myModal2">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #64dd17; color: white;">
+                    <h4 class="modal-title">Haan eita thik...Good</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Pc bridge mu khali swarupa saha jibi tama saha nhi...akward lage...khali holi khelibaku jiba ame sethiku hela
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4>Tame mote 1st tym pain kouthi dekhithila kahila ??</h4>
+            <!-- Button to Open the Modal -->
+            <span>
+              <button type="button" class="btn btn-dark btn-block my-4" data-toggle="modal" data-target="#myModal5"><i style="color: rgb(247, 207, 33); font-size: 30px;" class="fas fa-hotel"></i>   PULASTYA AGHARE</button>
+              <button type="button" class="btn btn-dark btn-block my-4" data-toggle="modal" data-target="#myModal4"><i style="color: rgb(73, 73, 73); font-size: 30px;" class="fas fa-cogs"></i>   WORKSHOP RE</button>
+            </span>
+          
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal5">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #ff3d00; color: white;">
+                    <h4 class="modal-title">NAAAAIII</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Se pulastya aghare tame mote 2nd tym pain dekhithila,aau 1st tym pain katha heithila...last day of 1st yr
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="myModal4">
+              <div class="modal-dialog modal-sm ">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #64dd17; color: white;">
+                    <h4 class="modal-title">Haan eita thik...Good</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Haan...sedina mu workshop file submit kari asithili,aau tamara setebele wrkshp chalithila...tame se white drs ta pindhithila...kete cute thila sebe,
+                    aau ebe raamphana chandi heigalani gote
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4>Tame saha mora best memory kn kahila ??</h4>
+            <!-- Button to Open the Modal -->
+            <span>
+              <button type="button" class="btn btn-secondary btn-block my-4" data-toggle="modal" data-target="#myModal6"><i style="color: white; font-size: 30px;" class="fas fa-plane"></i>   COIMBATORE</button>
+              <button type="button" class="btn btn-secondary btn-block my-4" data-toggle="modal" data-target="#myModal7"><i style="color: black; font-size: 30px;" class="fas fa-subway"></i>   BBSR MEMORIES</button>
+            </span>
+          
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal6">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #ff3d00; color: white;">
+                    <h4 class="modal-title">NAAAAIII</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Haan eita b memorable thila but tama lagi mo anta katila, ete gandhiya budhi tamara jo,laja nhi
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="myModal7">
+              <div class="modal-dialog modal-sm ">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: #64dd17; color: white;">
+                    <h4 class="modal-title">Haan eita thik...Good</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    BBSR hauchi best memory ebe jae bhitare...gobar re padigali tama lagi mu...bt kete suna pila thila...aau ebe jo ranga lo maa e manisa ra...tk 
+                    bancheidiya mote...mane ete gandhiya heigalani pura...bhala hua agha pari wapas se 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-success btn-rounded my-4" type="button" id="gq">Chala Bui Bui Jiba</button>
+            </div>
+          </div>          
+          <div class="card" id="box" style="display: none; margin: 10px;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="suna pila.jpg" alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+              <div class="card-body">
+              <h4 class="card-title">Kuha mu pyar se tamaku kn dake ??</h4>
+              <hr>
+              <p class="card-text">
+                <li>
+                  1st ltr in cap,
+                  Other ltrs r in small
+                </li>
+                n.b : Eita thik kuha nxt re actual surprise achi
+              </p>
+              <div class="md-form">
+                <input type="text" id="inputValidationEx2" placeholder="Type your password" class="form-control validate">
+                <button class="btn btn-primary btn-rounded my-4" type="button" style="float: right;" id="last">Next</button>
+              </div>
+              </div>
+          </div>
+          <div class="card" id="final" style="display: none;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="mu.jpg"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          
+            <!-- Card content -->
+            <div class="card-body elegant-color white-text rounded-bottom">
+              <hr class="hr-light">
+              <!-- Text -->
+              <h3>HAPPY BDAY ALOO BAIGANA POTALA</h3>
+              <p class="card-text white-text mb-4">I jst wanted to let u know, how much u mean to me nd how lucky I'm to hv u in my lyf
+                I'm amazed when I look at u, ur smile makes my heart skip a beat❤️ nd the sound of ur voice gives me butterflies, u changed
+                 my lyf without even trying. When I talk to u, my day gets a whole lot better😌😌😌. I may nt be ur 1st love, but I want be ur last💁‍♀️.
+                  I don't want to call u, I don't want any long long talks...I want to be in ur arms, hold ur hand, feel ur breath, hear ur
+                   heart, I waaant to be wid uuuu... I know I'm nt perfect, I'll annoy u, say stupid things thn take it all back, bt put that all a side nd
+                    u will never find someone who loves u more thn me💁‍♀️💁‍♀️, I'll always be by ur side, u make me feel alive, I'm so glad that I met u nd 
+                    Mr Sthitapragyan Rath I found a beautiful place to live, it's inside ur heart❤️ nd every tym when u put ur hand on ur heart u could feel me..
+                    so plz never ever try to let me go bcz I will never find a more beautiful place to live🤧🤧. Hey,It's nt only ur day it's our day, so lets go 
+                    away frm all the dispute we had and strt with a new beginning, a new yr of togetherness with more love nd respect in our hearts fr each other👩‍❤️‍💋‍👨. 
+                    Nd I will choose to love u in my every breathe even when I'm dying. So I jst want to say u I love u too❤️😘😘😘... 
+                <b>Happy birthday My Sugar lips😘😘😘</b></p>
+                <p>Besi english jhadi deli...Wese mu janini pua gudaku kmiti impress karajae kmiti surprise karaje...Sethipaeen eita re hin heijao impress hela mo aloo
+                  potala baigana...Aau aaji na mora gote icha thila bt corona mo icha ku char khar karidela...kn thila janicha...mu pura din tama saha rahithanti kash...
+                  I wish, I could stay with u fr the whole day...I wish,I could kiss u on ur forehead to add more care and protection to our rlsn, so that it will become more and more
+                  strngr,that no one can even try touch our rlsn...I ltrly miss u so much😌😌😌...Jaldi jaldi asijao mo pakhaku😌😌😌
+                </p>
+               <p>Hau ebe besi heigala dukha bhara kahani...ebe mote kuha kmiti lagila apnku e jatra ta...Apan kete dura ehi game ku upabhoga karile...nije view
+                 mote wp re msg kari janantu...aau mora website ku 5 star rating debaku bhulibeni bilkul bhi</p><br>
+                 <h3 style="text-align: center; color: black;"><i class="far fa-star" data-toggle="modal" data-target="#mysong1"></i>  <i class="far fa-star" data-toggle="modal" data-target="#mysong2"></i>  
+                  <i class="far fa-star" data-toggle="modal" data-target="#mysong3"></i>  <i class="far fa-star" data-toggle="modal" data-target="#mysong4"></i>  <a href="birth.html"><i style="color: black;" class="far fa-star" data-toggle="modal" data-target="#mysong"></i>
+               </h3>
+            </div>
+            <div class="modal" id="mysong1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header"style="background-color: turquoise;">
+                    <h4 class="modal-title" ></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  Gote star deucha laja saram nhi tamaku                 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="mysong2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header"style="background-color: turquoise;">
+                    <h4 class="modal-title" ></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  Sabu 2 ta hin deba,mu ete pyar se karichi...khali 2 ta star deucha gote tame,diya aau gote star pagala manisa              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="mysong3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: turquoise;">
+                    <h4 class="modal-title" ></h4>
+                    <button type="button"  class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  3 ta star kiye diye,neutral feel heuchi,aau gote diya            
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="mysong4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="background-color: turquoise;">
+                    <h4 class="modal-title"></h4>
+                    <button type="button"  class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  Charita star ta delani aau gote dei deuna kn achi,5 star dele aau gote surprise miliba             
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="heart.js"></script>   
+    </body>
+</html>
