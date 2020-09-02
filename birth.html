@@ -301,7 +301,15 @@ audio {
               </audio>
               <button class="btn btn-primary" id="play" style="position: fixed; bottom: 30px; right: 41vw;">Play Music</button>
               <script>
-                  setInterval(function(){
+                  
+                    $('#play').click(function(){
+                    var audio = $('.song')[0];
+                    var play = $('#play')
+                    audio.play();
+                    $("#play").css("display", "none");
+                    $("#menu").css("display", "block");
+                    $("#head").css("display", "none");
+                    setInterval(function(){
                   var i = document.getElementById("menu").innerHTML
                     if(i == "Today is..."){
                         document.getElementById("menu").innerHTML = "as beautiful as other days"
@@ -379,14 +387,8 @@ audio {
                         document.getElementById("menu").innerHTML = " "
                     }
                     },2800)
-                    $('#play').click(function(){
-                    var audio = $('.song')[0];
-                    var play = $('#play')
-                    audio.play();
-                    $("#play").css("display", "none");
-                    $("#menu").css("display", "block");
-                    $("#head").css("display", "none");
 	                });
+                    
               </script>
               
             </div>
